@@ -1,5 +1,7 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import ClickMarker from './ClickMarker';
+
 
 export default function App() {
     return (
@@ -12,6 +14,7 @@ export default function App() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution="&copy; OpenStreetMap contributors"
             />
+            <ClickMarker />
         </MapContainer>
     );
 }
